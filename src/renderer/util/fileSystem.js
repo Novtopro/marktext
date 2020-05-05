@@ -107,8 +107,8 @@ export const uploadImage = async (pathname, image, preferences) => {
       auth: `token ${token}`
 
     })
-    const path = dayjs().format('YYYY/MM') + `/${dayjs().format('DD-HH-mm-ss')}-${filename}`
-    const message = `Upload by Mark Text at ${dayjs().format('YYYY-MM-DD HH:mm:ss')}`
+    const path = dayjs().format('YYYYMMDD') + `/${filename}`
+    const message = 'Upload assets'
     var payload = {
       owner,
       repo,
